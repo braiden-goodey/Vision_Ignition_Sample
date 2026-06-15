@@ -1,0 +1,43 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1200,
+      "height": 800
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "AuditTable"
+        },
+        "position": {
+          "height": 740,
+          "width": 1160,
+          "x": 20,
+          "y": 20
+        },
+        "propConfig": {
+          "props.data": {
+            "binding": {
+              "config": {
+                "queryPath": "Audit Events/Query"
+              },
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "rowHeight": 32
+        },
+        "type": "ia.display.table"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

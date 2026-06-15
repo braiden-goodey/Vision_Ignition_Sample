@@ -66,6 +66,28 @@
       "title": "",
       "viewPath": "embedded_view"
     },
+    "/from_git": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 150,
+            "viewParams": {},
+            "viewPath": "Vision/Docks/Page Navigation"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "From Git"
+    },
     "/images": {
       "docks": {
         "top": [
@@ -109,29 +131,6 @@
       },
       "title": "",
       "viewPath": "main"
-    }
-    ,
-    "/from_git": {
-      "docks": {
-        "top": [
-          {
-            "anchor": "fixed",
-            "autoBreakpoint": 480,
-            "content": "push",
-            "handle": "hide",
-            "iconUrl": "",
-            "id": "",
-            "modal": false,
-            "resizable": false,
-            "show": "visible",
-            "size": 150,
-            "viewParams": {},
-            "viewPath": "Vision/Docks/Page Navigation"
-          }
-        ]
-      },
-      "title": "",
-      "viewPath": "From Git"
     }
   },
   "sharedDocks": {

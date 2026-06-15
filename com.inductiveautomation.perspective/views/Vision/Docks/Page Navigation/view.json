@@ -28,6 +28,10 @@
           "basis": "116px"
         },
         "props": {
+          "style": {
+            "backgroundColor": "#008000",
+            "color": "#ffffff"
+          },
           "text": "Go To Main"
         },
         "type": "ia.input.button"
@@ -48,6 +52,10 @@
           "name": "Button_0"
         },
         "props": {
+          "style": {
+            "backgroundColor": "#008000",
+            "color": "#ffffff"
+          },
           "text": "Go To DataSheet"
         },
         "type": "ia.input.button"
@@ -68,6 +76,10 @@
           "name": "Button_1"
         },
         "props": {
+          "style": {
+            "backgroundColor": "#008000",
+            "color": "#ffffff"
+          },
           "text": "Go To Images"
         },
         "type": "ia.input.button"
@@ -88,6 +100,10 @@
           "name": "Button_2"
         },
         "props": {
+          "style": {
+            "backgroundColor": "#008000",
+            "color": "#ffffff"
+          },
           "text": "Camera Live View"
         },
         "type": "ia.input.button"
@@ -97,7 +113,7 @@
           "dom": {
             "onClick": {
               "config": {
-                "page": "/embeded_view"
+                "page": "/embedded_view"
               },
               "scope": "C",
               "type": "nav"
@@ -108,6 +124,10 @@
           "name": "Button_3"
         },
         "props": {
+          "style": {
+            "backgroundColor": "#008000",
+            "color": "#ffffff"
+          },
           "text": "Embedded View"
         },
         "type": "ia.input.button"
@@ -128,7 +148,11 @@
           "name": "Button_4"
         },
         "props": {
-          "text": "Test1234"
+          "style": {
+            "backgroundColor": "#008000",
+            "color": "#ffffff"
+          },
+          "text": "From Git"
         },
         "type": "ia.input.button"
       }
