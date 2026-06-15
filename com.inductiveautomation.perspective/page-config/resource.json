@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json"
+  ],
+  "attributes": {
+    "lastModificationSignature": "3403090b1b0764785960993414ff19cf5d73bb08c805d6b72a6cee639ebc1e2b",
+    "lastModification": {
+      "actor": "braiden.goodey",
+      "timestamp": "2026-06-02T17:28:30Z"
+    }
+  }
+}

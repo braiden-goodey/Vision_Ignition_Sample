@@ -1,0 +1,27 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "IFrame"
+        },
+        "position": {
+          "height": 731,
+          "width": 769,
+          "x": -1
+        },
+        "props": {
+          "src": "/system/webdev/Vision_Playground/barcodeScanner"
+        },
+        "type": "ia.display.iframe"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

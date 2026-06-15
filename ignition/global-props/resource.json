@@ -1,0 +1,16 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModificationSignature": "ea2aa23e7ede69ea6b8ce1d698747a71bfc96e1662eb30c44f58a581310ae737",
+    "lastModification": {
+      "actor": "braiden.goodey",
+      "timestamp": "2026-04-30T14:21:23Z"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1183
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "config": {
+                  "backgroundColor": "AUTO",
+                  "cameraPreference": "BACK",
+                  "type": "ANY",
+                  "uuid": "7879516b-7e67-4689-a15e-007aa846b75e"
+                },
+                "context": {}
+              },
+              "scope": "C",
+              "type": "native/barcode"
+            }
+          }
+        },
+        "meta": {
+          "name": "Image"
+        },
+        "position": {
+          "height": 314,
+          "width": 483,
+          "x": -1,
+          "y": 14
+        },
+        "props": {
+          "fit": {
+            "height": 800,
+            "mode": "contain",
+            "width": 800
+          },
+          "source": "/system/images/Builtin/icons/48/camera2.png"
+        },
+        "type": "ia.display.image"
+      }
+    ],
+    "custom": {
+      "customurl": "[default]BarcodeLastScan"
+    },
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "onBarcodeDataReceived.py"
+  ],
+  "attributes": {
+    "lastModificationSignature": "5a6fb1c26488f166f54b35008194e10dbe3f2e67bc90ca16997b3b9c49ec58c1",
+    "lastModification": {
+      "actor": "braiden.goodey",
+      "timestamp": "2026-05-28T21:49:48Z"
+    },
+    "enabled": true
+  }
+}

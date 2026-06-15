@@ -1,0 +1,71 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "events": {
+          "component": {
+            "onFileReceived": {
+              "config": {
+                "script": "\t# Get the uploaded file\n\tfile \u003d event.file\n\t\n\t# Read bytes and encode to base64\n\timport base64\n\tencoded \u003d base64.b64encode(file.getBytes()).decode(\u0027utf-8\u0027)\n\t\n\t# Store it in a custom property on the view\n\tself.session.custom.imageData \u003d encoded\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "FileUpload"
+        },
+        "position": {
+          "height": 92,
+          "width": 331,
+          "x": 14,
+          "y": 524
+        },
+        "props": {
+          "supportedFileTypes": [
+            "png",
+            "jpg",
+            "jpeg",
+            "gif",
+            "webp",
+            "bmp"
+          ]
+        },
+        "type": "ia.input.fileupload"
+      },
+      {
+        "meta": {
+          "name": "Image"
+        },
+        "position": {
+          "height": 507,
+          "width": 502
+        },
+        "propConfig": {
+          "props.source": {
+            "binding": {
+              "config": {
+                "expression": "if(\r\n    isNull({session.custom.imageData}),\r\n    \"\",\r\n    concat(\r\n        \"data:image/png;base64,\",\r\n        {session.custom.imageData}\r\n    )\r\n)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "fit": {
+            "mode": "contain"
+          }
+        },
+        "type": "ia.display.image"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "config.json",
+    "doPut.py",
+    "doTrace.py",
+    "doHead.py",
+    "doPatch.py",
+    "doPost.py",
+    "doOptions.py",
+    "doGet.py",
+    "doDelete.py"
+  ],
+  "attributes": {
+    "lastModificationSignature": "2a233cbf556e8bff07ae3b83f00ed64e9a6f961a39bf76bfe1dd94ed2a936619",
+    "lastModification": {
+      "actor": "braiden.goodey",
+      "timestamp": "2026-06-08T15:44:14Z"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 815,
+      "width": 1678
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "IFrame"
+        },
+        "position": {
+          "height": 731,
+          "width": 767,
+          "x": 769,
+          "y": -1.5
+        },
+        "propConfig": {
+          "props.src": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]BarcodeLastScan"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "type": "ia.display.iframe"
+      },
+      {
+        "meta": {
+          "name": "IFrame_0"
+        },
+        "position": {
+          "height": 731,
+          "width": 769
+        },
+        "props": {
+          "src": "/system/webdev/Vision_Playground/barcodeScanner"
+        },
+        "type": "ia.display.iframe"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}
