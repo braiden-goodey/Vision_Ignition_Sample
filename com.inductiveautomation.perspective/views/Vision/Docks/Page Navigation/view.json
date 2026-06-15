@@ -128,7 +128,7 @@
           "name": "Button_4"
         },
         "props": {
-          "text": "Test1234"
+          "text": "From Git"
         },
         "type": "ia.input.button"
       }
