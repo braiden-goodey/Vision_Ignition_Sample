@@ -21,9 +21,9 @@
         },
         "props": {
           "placeholder": "Enter BarCode",
-          "value": ""
+          "text": ""
         },
-        "type": "ia.input.text"
+        "type": "ia.input.text-field"
       },
       {
         "meta": {
@@ -36,10 +36,10 @@
           "y": 10
         },
         "events": {
-          "dom": {
-            "onClick": {
+          "component": {
+            "onActionPerformed": {
               "config": {
-                "script": "self.session.custom.BarCode = self.getSibling('BarcodeInput').props.value\nsystem.perspective.printReport('New Report', {'BarCode': self.session.custom.BarCode})"
+                "script": "self.session.custom.BarCode = self.getSibling('BarcodeInput').props.text\nsystem.perspective.printReport('New Report', {'BarCode': self.session.custom.BarCode})"
               },
               "scope": "G",
               "type": "script"
