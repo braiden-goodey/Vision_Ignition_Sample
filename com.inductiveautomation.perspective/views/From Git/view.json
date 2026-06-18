@@ -19,6 +19,16 @@
           "x": 10,
           "y": 10
         },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "session.custom.BarCode"
+              },
+              "type": "property"
+            }
+          }
+        },
         "props": {
           "placeholder": "Enter BarCode",
           "text": ""
