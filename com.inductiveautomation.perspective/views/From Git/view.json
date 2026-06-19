@@ -3,8 +3,7 @@
   "params": {},
   "props": {
     "defaultSize": {
-      "height": 600,
-      "width": 800
+      "height": 600
     }
   },
   "root": {
@@ -23,19 +22,32 @@
           "props.text": {
             "binding": {
               "config": {
-                "path": "session.custom.BarCode"
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]QR_Inout"
               },
-              "type": "property"
+              "type": "tag"
             }
           }
         },
         "props": {
-          "placeholder": "Enter BarCode",
-          "text": ""
+          "placeholder": "Enter BarCode"
         },
         "type": "ia.input.text-field"
       },
       {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "self.session.custom.BarCode \u003d self.getSibling(\u0027BarcodeInput\u0027).props.text\nsystem.perspective.printReport(\u0027New Report\u0027, {\u0027BarCode\u0027: self.session.custom.BarCode})"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
         "meta": {
           "name": "RunReportButton"
         },
@@ -45,17 +57,6 @@
           "x": 380,
           "y": 10
         },
-        "events": {
-          "component": {
-            "onActionPerformed": {
-              "config": {
-                "script": "self.session.custom.BarCode = self.getSibling('BarcodeInput').props.text\nsystem.perspective.printReport('New Report', {'BarCode': self.session.custom.BarCode})"
-              },
-              "scope": "G",
-              "type": "script"
-            }
-          }
-        },
         "props": {
           "style": {
             "backgroundColor": "#008000",
@@ -64,6 +65,33 @@
           "text": "Run New Report"
         },
         "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Barcode"
+        },
+        "position": {
+          "height": 175,
+          "width": 200,
+          "x": 83,
+          "y": 119
+        },
+        "propConfig": {
+          "props.source": {
+            "binding": {
+              "config": {
+                "expression": "if(isNull({[default]QR_Inout}), '', concat('https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=', urlEncode({[default]QR_Inout})))"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "fit": {
+            "mode": "contain"
+          }
+        },
+        "type": "ia.display.image"
       }
     ],
     "meta": {
