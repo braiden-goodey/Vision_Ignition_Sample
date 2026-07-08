@@ -71,8 +71,8 @@
           "name": "Barcode"
         },
         "position": {
-          "height": 175,
-          "width": 200,
+          "height": 17,
+          "width": 20,
           "x": 83,
           "y": 119
         },
@@ -80,7 +80,7 @@
           "props.source": {
             "binding": {
               "config": {
-                "expression": "if(isNull({[default]QR_Inout}), \u0027\u0027, concat(\u0027https://api.qrserver.com/v1/create-qr-code/?size\u003d200x200\u0026data\u003d\u0027, urlEncode({[default]QR_Inout})))"
+                "expression": "if(isNull({[default]QR_Inout}), '', concat('https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=', urlEncode({[default]QR_Inout})))"
               },
               "type": "expr"
             }
@@ -99,11 +99,11 @@
     },
     "props": {
       "style": {
-        "alignItems": "stretch",
         "display": "flex",
         "flexDirection": "row",
-        "height": "100%",
+        "alignItems": "stretch",
         "justifyContent": "space-between",
+        "height": "100%",
         "width": "100%"
       }
     },
