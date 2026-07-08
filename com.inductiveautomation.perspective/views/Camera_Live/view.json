@@ -1,7 +1,12 @@
 {
   "custom": {},
   "params": {},
-  "props": {},
+  "props": {
+    "defaultSize": {
+      "height": 966,
+      "width": 1050
+    }
+  },
   "root": {
     "children": [
       {
@@ -9,12 +14,18 @@
           "name": "IFrame"
         },
         "position": {
-          "height": 731,
-          "width": 769,
-          "x": -1
+          "basis": "100%"
         },
         "props": {
-          "src": "/system/webdev/Vision_Playground/barcodeScanner"
+          "src": "/system/webdev/Vision_Playground/barcodeScanner",
+          "style": {
+            "backgroundColor": "#020617",
+            "display": "block",
+            "flex": "1 1 auto",
+            "height": "100%",
+            "objectFit": "cover",
+            "width": "100%"
+          }
         },
         "type": "ia.display.iframe"
       }
@@ -22,6 +33,16 @@
     "meta": {
       "name": "root"
     },
-    "type": "ia.container.coord"
+    "props": {
+      "style": {
+        "background": "linear-gradient(225deg,Grey 50%, #FFFFFF 100% )",
+        "border": "10px solid #475569",
+        "borderRadius": "12px",
+        "height": "100%",
+        "overflow": "hidden",
+        "width": "100%"
+      }
+    },
+    "type": "ia.container.flex"
   }
 }

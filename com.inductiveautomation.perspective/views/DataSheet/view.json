@@ -10,13 +10,34 @@
   "root": {
     "children": [
       {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\ttable \u003d self.getSibling(\u0027Table\u0027)\nselectedRows \u003d getattr(table.props, \u0027selectedRows\u0027, None)\nif selectedRows is None:\n    selectionProps \u003d getattr(table.props, \u0027selection\u0027, None)\n    if selectionProps is not None:\n        selectedRows \u003d getattr(selectionProps, \u0027selectedRows\u0027, None)\n        if selectedRows is None:\n            selectedRows \u003d getattr(selectionProps, \u0027selectedRow\u0027, None)\nif selectedRows is None:\n    selectedIndex \u003d getattr(table.props, \u0027selectedRow\u0027, None)\n    selectedRows \u003d [selectedIndex] if selectedIndex is not None else []\nif not selectedRows:\n    system.perspective.addMessage(\u0027Select at least one row before exporting.\u0027, \u0027error\u0027)\n    raise ValueError(\u0027No rows selected\u0027)\nif isinstance(selectedRows, int):\n    selectedRows \u003d [selectedRows]\ndata \u003d table.props.data\nif data is None or data.rowCount \u003d\u003d 0:\n    system.perspective.addMessage(\u0027No data available to export.\u0027, \u0027error\u0027)\n    raise ValueError(\u0027No data to export\u0027)\ncolumns \u003d list(data.columnNames)\nrows \u003d []\nfor rowIndex in selectedRows:\n    row \u003d []\n    for colIndex in range(data.columnCount):\n        row.append(data.getValueAt(rowIndex, colIndex))\n    rows.append(row)\nexportDs \u003d system.dataset.toDataSet(columns, rows)\noutput \u003d system.dataset.toExcel(exportDs)\npath \u003d r\u0027C:\\Users\\braiden.goodey\\OneDrive - Thermo Fisher Scientific\\Desktop\\HERE\\selected_rows_export.xlsx\u0027\nsystem.file.writeFileBytes(path, output)\nsystem.perspective.addMessage(\u0027Export complete: \u0027 + path, \u0027information\u0027)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "ExportButton"
+        },
+        "position": {
+          "basis": "48px"
+        },
+        "props": {
+          "text": "Export Selected Rows"
+        },
+        "type": "ia.input.button"
+      },
+      {
         "meta": {
           "name": "Table"
         },
         "position": {
-          "height": 651,
-          "width": 706,
-          "x": 22
+          "basis": "100%"
         },
         "propConfig": {
           "props.data": {
@@ -26,6 +47,19 @@
               },
               "type": "query"
             }
+          }
+        },
+        "props": {
+          "selectedRows": [],
+          "selection": {
+            "mode": "multiple"
+          },
+          "selectionEnabled": true,
+          "selectionMode": "multiple",
+          "selectionType": "row",
+          "style": {
+            "height": "100%",
+            "width": "100%"
           }
         },
         "type": "ia.display.table"
@@ -38,6 +72,13 @@
       "x": 40,
       "y": 0
     },
-    "type": "ia.container.coord"
+    "props": {
+      "direction": "column",
+      "flexDirection": "column",
+      "style": {
+        "overflow": "visible"
+      }
+    },
+    "type": "ia.container.flex"
   }
 }
