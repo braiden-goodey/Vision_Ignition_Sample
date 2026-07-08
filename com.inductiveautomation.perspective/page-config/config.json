@@ -13,7 +13,7 @@
             "modal": false,
             "resizable": false,
             "show": "visible",
-            "size": 50,
+            "size": 150,
             "viewParams": {},
             "viewPath": "Vision/Docks/Page Navigation"
           }
@@ -35,7 +35,7 @@
             "modal": false,
             "resizable": false,
             "show": "visible",
-            "size": 50,
+            "size": 150,
             "viewParams": {},
             "viewPath": "Vision/Docks/Page Navigation"
           }
@@ -57,7 +57,7 @@
             "modal": false,
             "resizable": false,
             "show": "visible",
-            "size": 50,
+            "size": 150,
             "viewParams": {},
             "viewPath": "Vision/Docks/Page Navigation"
           }
@@ -79,7 +79,7 @@
             "modal": false,
             "resizable": false,
             "show": "visible",
-            "size": 50,
+            "size": 150,
             "viewParams": {},
             "viewPath": "Vision/Docks/Page Navigation"
           }
@@ -101,7 +101,7 @@
             "modal": false,
             "resizable": false,
             "show": "visible",
-            "size": 50,
+            "size": 150,
             "viewParams": {},
             "viewPath": "Vision/Docks/Page Navigation"
           }
@@ -123,7 +123,7 @@
             "modal": false,
             "resizable": false,
             "show": "visible",
-            "size": 50,
+            "size": 150,
             "viewParams": {},
             "viewPath": "Vision/Docks/Page Navigation"
           }

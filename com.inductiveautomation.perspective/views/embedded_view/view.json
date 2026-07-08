@@ -14,13 +14,10 @@
           "name": "IFrame"
         },
         "position": {
-          "height": "100%",
-          "rotate": {
-            "anchor": "50%  50%"
-          },
-          "width": "50%",
-          "x": 922,
-          "y": -0.5
+          "height": 731,
+          "width": 767,
+          "x": 769,
+          "y": -1.5
         },
         "propConfig": {
           "props.src": {
@@ -41,8 +38,8 @@
           "name": "IFrame_0"
         },
         "position": {
-          "height": "100%",
-          "width": "50%"
+          "height": 731,
+          "width": 769
         },
         "props": {
           "src": "/system/webdev/Vision_Playground/barcodeScanner"
@@ -53,16 +50,6 @@
     "meta": {
       "name": "root"
     },
-    "props": {
-      "style": {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "column",
-        "height": "100%",
-        "justifyContent": "center",
-        "width": "100%"
-      }
-    },
-    "type": "ia.container.flex"
+    "type": "ia.container.coord"
   }
 }

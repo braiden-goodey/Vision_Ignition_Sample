@@ -66,16 +66,6 @@
     "meta": {
       "name": "root"
     },
-    "props": {
-      "style": {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "column",
-        "height": "100%",
-        "justifyContent": "flex-start",
-        "width": "100%"
-      }
-    },
-    "type": "ia.container.flex"
+    "type": "ia.container.coord"
   }
 }

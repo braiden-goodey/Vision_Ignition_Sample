@@ -3,8 +3,8 @@
   "params": {},
   "props": {
     "defaultSize": {
-      "height": 640,
-      "width": 1158
+      "height": 39,
+      "width": 1063
     }
   },
   "root": {
@@ -22,22 +22,14 @@
           }
         },
         "meta": {
-          "name": "MainButton"
+          "name": "Button"
         },
-        "propConfig": {
-          "props.style.borderWidth": {
-            "binding": {
-              "config": {
-                "expression": "if({page.props.path} \u003d \"/main\", 3, 0)"
-              },
-              "type": "expr"
-            }
-          }
+        "position": {
+          "basis": "116px"
         },
         "props": {
           "style": {
             "backgroundColor": "#008000",
-            "borderColor": "#FFFF47",
             "color": "#ffffff"
           },
           "text": "Go To Main"
@@ -57,22 +49,11 @@
           }
         },
         "meta": {
-          "name": "DataSheetButton"
-        },
-        "propConfig": {
-          "props.style.borderWidth": {
-            "binding": {
-              "config": {
-                "expression": "if({page.props.path} \u003d \"/datasheet\", 3, 0)"
-              },
-              "type": "expr"
-            }
-          }
+          "name": "Button_0"
         },
         "props": {
           "style": {
             "backgroundColor": "#008000",
-            "borderColor": "#FFFF47",
             "color": "#ffffff"
           },
           "text": "Go To DataSheet"
@@ -92,22 +73,11 @@
           }
         },
         "meta": {
-          "name": "ImagesButton"
-        },
-        "propConfig": {
-          "props.style.borderWidth": {
-            "binding": {
-              "config": {
-                "expression": "if({page.props.path} \u003d \"/images\", 3, 0)"
-              },
-              "type": "expr"
-            }
-          }
+          "name": "Button_1"
         },
         "props": {
           "style": {
             "backgroundColor": "#008000",
-            "borderColor": "#FFFF47",
             "color": "#ffffff"
           },
           "text": "Go To Images"
@@ -127,22 +97,11 @@
           }
         },
         "meta": {
-          "name": "CameraLiveButton"
-        },
-        "propConfig": {
-          "props.style.borderWidth": {
-            "binding": {
-              "config": {
-                "expression": "if({page.props.path} \u003d \"/camera_live\", 3, 0)"
-              },
-              "type": "expr"
-            }
-          }
+          "name": "Button_2"
         },
         "props": {
           "style": {
             "backgroundColor": "#008000",
-            "borderColor": "#FFFF47",
             "color": "#ffffff"
           },
           "text": "Camera Live View"
@@ -162,22 +121,11 @@
           }
         },
         "meta": {
-          "name": "EmbeddedViewButton"
-        },
-        "propConfig": {
-          "props.style.borderWidth": {
-            "binding": {
-              "config": {
-                "expression": "if({page.props.path} \u003d \"/embedded_view\", 3, 0)"
-              },
-              "type": "expr"
-            }
-          }
+          "name": "Button_3"
         },
         "props": {
           "style": {
             "backgroundColor": "#008000",
-            "borderColor": "#FFFF47",
             "color": "#ffffff"
           },
           "text": "Embedded View"
@@ -197,22 +145,11 @@
           }
         },
         "meta": {
-          "name": "FromGitButton"
-        },
-        "propConfig": {
-          "props.style.borderWidth": {
-            "binding": {
-              "config": {
-                "expression": "if({page.props.path} \u003d \"/from_git\", 3, 0)"
-              },
-              "type": "expr"
-            }
-          }
+          "name": "Button_4"
         },
         "props": {
           "style": {
             "backgroundColor": "#008000",
-            "borderColor": "#FFFF47",
             "color": "#ffffff"
           },
           "text": "From Git"
@@ -224,14 +161,9 @@
       "name": "root"
     },
     "props": {
-      "alignContent": "flex-start",
-      "alignItems": "flex-start",
-      "justifyContent": "center",
-      "style": {
-        "backgroundColor": "#2B2B2B",
-        "overflow": "visible"
-      }
+      "alignItems": "baseline"
     },
     "type": "ia.container.flex"
   }
 }
+
