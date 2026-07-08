@@ -3,7 +3,8 @@
   "params": {},
   "props": {
     "defaultSize": {
-      "height": 600
+      "height": 639,
+      "width": 804
     }
   },
   "root": {
@@ -70,6 +71,11 @@
         "meta": {
           "name": "Barcode"
         },
+        "position": {
+          "grow": 1,
+          "x": 10,
+          "y": 60
+        },
         "propConfig": {
           "props.source": {
             "binding": {
@@ -80,11 +86,6 @@
             }
           }
         },
-        "props": {
-          "fit": {
-            "mode": "contain"
-          }
-        },
         "type": "ia.display.image"
       }
     ],
@@ -92,6 +93,7 @@
       "name": "root"
     },
     "props": {
+      "direction": "column",
       "style": {
         "alignItems": "stretch",
         "display": "flex",
