@@ -76,7 +76,9 @@
       "direction": "column",
       "flexDirection": "column",
       "style": {
-        "overflow": "visible"
+        "overflow": "visible",
+        "height": "100%",
+        "width": "100%"
       }
     },
     "type": "ia.container.flex"

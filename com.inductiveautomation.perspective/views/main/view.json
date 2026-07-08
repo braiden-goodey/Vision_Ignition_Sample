@@ -3,8 +3,7 @@
   "params": {},
   "props": {
     "defaultSize": {
-      "height": 804,
-      "width": 1016
+      "width": 1183
     }
   },
   "root": {
@@ -31,10 +30,9 @@
           "name": "Image"
         },
         "position": {
-          "basis": "1016px",
           "height": 314,
           "width": 483,
-          "x": -1,
+          "x": 100,
           "y": 14
         },
         "props": {
@@ -56,10 +54,10 @@
     },
     "props": {
       "style": {
-        "alignItems": "center",
         "display": "flex",
-        "height": "100%",
         "justifyContent": "center",
+        "alignItems": "center",
+        "height": "100%",
         "width": "100%"
       }
     },

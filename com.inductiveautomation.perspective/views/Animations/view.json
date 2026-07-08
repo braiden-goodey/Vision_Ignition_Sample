@@ -6,6 +6,16 @@
     "meta": {
       "name": "root"
     },
-    "type": "ia.container.coord"
+    "props": {
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "height": "100%",
+        "width": "100%"
+      }
+    },
+    "type": "ia.container.flex"
   }
 }
