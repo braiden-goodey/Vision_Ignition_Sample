@@ -86,6 +86,11 @@
             }
           }
         },
+        "props": {
+          "fit": {
+            "mode": "absolute"
+          }
+        },
         "type": "ia.display.image"
       }
     ],
